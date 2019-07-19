@@ -10,40 +10,91 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <title>Hello, DeltaX</title>
+    <title>MovieDB | An assignment submitted to DeltaX</title>
+
+    <style>
+      .lead {
+        font-size: 1.5rem;
+        font-weight: 400;
+      }
+      nav {
+        margin-bottom: 30px;
+      }
+    </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">
-        <img src="/static/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-        MovieDB
-      </a>
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="/static/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+          MovieDB
+        </a>
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Movies <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">TV Shows</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Celebraties</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Watch List</a>
-          </li>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Movies <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">TV Shows</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Celebraties</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Watch List</a>
+            </li>
+          </ul>
+
+          <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-primary my-2 my-sm-0 float-xs-right float-md-none" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="my-3 row">
+        <h1 class="lead col-sm-12 col-md-8">Top 10 Movies of 2019</h1>
+        <a class="btn btn-info btn-sm col-sm-12 col-md-2 offset-md-2 col-lg-1 offset-lg-3" href="#" role="button">&#43; Movie</a>
       </div>
 
-      <form class="form-inline">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
-    </nav>
+      <table class="table table-borderless">
+        <thead>
+          <tr>
+            <th scope="col">Poster</th>
+            <th scope="col">Movie Name</th>
+            <th scope="col">Year</th>
+            <th scope="col">Plot</th>
+            <th scope="col">Cast</th>
+            <th scope="col">Edit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><img src="https://prodimage.images-bn.com/pimages/0025192150555_p0_v4_s550x406.jpg" width="50px"></td>
+            <td>Oblivion</td>
+            <td>2013</td>
+            <td>Jack Harper, a drone repairman stationed on Earth, which has been ravaged by war with extraterrestrials, questions his identity after rescuing the woman who keeps appearing in his dreams.</td>
+            <td>Andrea Riseborough, Olga Kurylenko, Tom Cruise, Morgan Freeman, Nikolaj Coster</td>
+            <td>&#9997;</td>
+          </tr>
+          <tr>
+            <td><img src="http://t2.gstatic.com/images?q=tbn:ANd9GcQA_-tL18_rj9zEcjN6n41NEaJm-kRNF9UeOtvksZ4z_OW6jRA9" width="50px"></td>
+            <td>Avangers: End Game</td>
+            <td>2019</td>
+            <td>Adrift in space with no food or water, Tony Stark sends a message to Pepper Potts as his oxygen supply starts to dwindle. Meanwhile, the remaining Avengers -- Thor, Black Widow, Captain America and Bruce Banner -- must figure out a way to bring back their vanquished allies for an epic showdown with Thanos -- the evil demigod who decimated the planet and the universe.</td>
+            <td>Chris Evans, Robert Downey, Jr., Chris Hemsworth, Scarlett Johansson, Mark Ruffalo</td>
+            <td>&#9997;</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
