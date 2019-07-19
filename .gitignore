@@ -1,5 +1,6 @@
 # Distribution / packaging
 .Python
+__pycache__/
 build/
 develop-eggs/
 dist/
@@ -41,7 +42,7 @@ flask_session/
 .env
 .venv
 env/
-venv/
+deltaenv/
 ENV/
 env.bak/
 venv.bak/
