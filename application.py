@@ -32,4 +32,4 @@ db.init_app(app) # db as defined in models.py
 # Index page route
 @app.route('/')
 def index():
-    return "Hello DeltaX"
+    return render_template('index.html')
