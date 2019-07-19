@@ -8,6 +8,10 @@ from flask_session import Session
 from flask_bcrypt import generate_password_hash, check_password_hash
 from models import *
 
+# cloudinary imports for image CDN
+from cloudinary.uploader import upload
+from cloudinary.utils import cloudinary_url
+
 app = Flask(__name__)
 
 # Configure session to use filesystem
